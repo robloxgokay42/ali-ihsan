@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✂️ Modern Berber Stüdyosu - [Berber Adı]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme-switcher.js" defer></script>
+</head>
+<body data-theme="dark"> <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#hero">BARBER DASH</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Hizmetler</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#prices">Fiyatlar</a></li>
+                <li><a href="#appointment" class="btn-cta">Randevu Al</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle-btn" title="Temayı Değiştir">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="headline" data-animation="fade-in-up">
+                    Keskin Hatlar. <br> Modern Stil.
+                </h1>
+                <p class="sub-headline" data-animation="fade-in-up">
+                    [Berber Adı], sadece bir tıraş değil, bir deneyim sunar.
+                </p>
+                <a href="#appointment" class="btn-cta large-btn">Şimdi Randevu Oluştur</a>
+            </div>
+            </section>
+
+        <section id="services" class="content-section services-section">
+            <h2 class="section-title" data-animation="fade-in">Uzmanlık Alanlarımız</h2>
+            <div class="service-grid">
+                <div class="service-card card-item" data-animation="slide-in-left">
+                    <i class="icon">💈</i>
+                    <h3>Klasik Saç Kesimi</h3>
+                    <p>Zamansız stiller ve kusursuz fade teknikleri.</p>
+                </div>
+                <div class="service-card card-item" data-animation="slide-in-up">
+                    <i class="icon">🪒</i>
+                    <h3>Sıcak Havlu Tıraş</h3>
+                    <p>Geleneksel jilet ve rahatlatıcı sıcak havlu ritüeli.</p>
+                </div>
+                <div class="service-card card-item" data-animation="slide-in-right">
+                    <i class="icon">✨</i>
+                    <h3>Bakım Paketleri</h3>
+                    <p>Sakal şekillendirme, yüz maskesi ve özel cilt bakımı.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gallery" class="content-section gallery-section">
+            <h2 class="section-title" data-animation="fade-in">Galeriden Seçmeler</h2>
+            <div class="image-slider" data-animation="fade-in-up">
+                <div class="slide placeholder-image">Proje Görseli 1</div>
+                <div class="slide placeholder-image">Proje Görseli 2</div>
+                <div class="slide placeholder-image">Proje Görseli 3</div>
+                <button class="slider-nav prev">❮</button>
+                <button class="slider-nav next">❯</button>
+            </div>
+        </section>
+
+        <section id="appointment" class="content-section appointment-section">
+            <h2 class="section-title" data-animation="fade-in">Randevunuzu Ayırın</h2>
+            <form id="appointment-form" data-animation="slide-in-up">
+                <div class="form-group">
+                    <label for="name">Adınız Soyadınız</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Hizmet Seçimi</label>
+                    <select id="service" name="service" required>
+                        <option value="">Lütfen Seçiniz</option>
+                        <option value="cut">Saç Kesimi</option>
+                        <option value="shave">Sakal Tıraşı</option>
+                        <option value="package">Komple Paket</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Tarih ve Saat</label>
+                    <input type="datetime-local" id="date" name="date" required>
+                </div>
+                <button type="submit" class="btn-submit">Randevuyu Onayla</button>
+                <p id="form-message" class="hidden"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 [Berber Adı]. Tüm Hakları Saklıdır. | GitHub Projesi: [Link]</p>
+        <div class="social-links">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Konum">📍</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/animations.js" defer></script>
+</body>
+</html>
